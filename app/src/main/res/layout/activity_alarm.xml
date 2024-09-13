@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/padding"
+    tools:context=".AlarmActivity">
+
+    <LinearLayout
+        android:id="@+id/containerToolbarAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/Blue"
+            app:subtitleTextAppearance="@style/TextAppearance.AppCompat.Small"
+            app:subtitleTextColor="@color/white"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/alarmImageGifIV"
+        android:layout_width="@dimen/imageSizeMain"
+        android:layout_height="@dimen/imageSizeMain"
+        app:layout_constraintBottom_toTopOf="@+id/alarmStopButtonBT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerToolbarAlarm"
+        android:src="@drawable/alarm_clock"></pl.droidsonroids.gif.GifImageView>
+
+    <Button
+        android:id="@+id/alarmStopButtonBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Transparent"
+        android:text="@string/alarmStopButtonBT_Text"
+        android:textColor="@color/Blue_purple"
+        android:textSize="@dimen/textSiZeBT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerToolbarAlarm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

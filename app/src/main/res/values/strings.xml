@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Samojlov_AV_Homework_Module_13_number_2</string>
+    <string name="alarmButtonBT_Text">Установить будильник</string>
+
+    <string name="toolbar_title">Мой будильник</string>
+    <string name="toolbar_subtitle">Mod. 13 № 2</string>
+    <string name="exit">Exit</string>
+    <string name="toast_exit">Приложение закрыто</string>
+
+    <string name="alarmTimeTextViewTV_Hint">00:00</string>
+    <string name="materialTimePicker_Title">Выбите время будильника</string>
+    <string name="alarmStopButtonBT_Text">Выключить будильник</string>
+</resources>
